@@ -6,7 +6,7 @@
     "view": {"fill": "#2a383e"},
     "config": {"style": {"cell": {"stroke": "transparent"}}},
     "title": {"text": "Death Rates Amongst Age Groups", "color": "white", "fontSize": 25},
-    "data": {"url": "https://raw.githubusercontent.com/githubuser0099/Repo55/main/AgeBracket.csv"},
+    "data": {"url": "https://raw.githubusercontent.com/githubuser0099/Assignment2/main/Data/AgeBracket.csv"},
     "transform": [
         {"calculate":"parseInt(datum.Death_Rate)", "as": "Death_Rate"}
       ],
