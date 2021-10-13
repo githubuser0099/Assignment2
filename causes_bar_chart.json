@@ -6,7 +6,7 @@
     "config": {"style": {"cell": {"stroke": "transparent"}}},
     "view": {"fill": "#2a383e"},
     "title": {"text": "Biggest Killers", "color": "white", "fontSize": 25},
-    "data": {"url": "https://raw.githubusercontent.com/githubuser0099/Assignment2.1/main/Cause_Of_Death_v2.csv"},
+    "data": {"url": "https://raw.githubusercontent.com/githubuser0099/Assignment2/main/Cause_Of_Death_v2.csv"},
     "transform": [
         {"calculate":"parseInt(datum.Toll)", "as": "Toll"}
       ],
