@@ -13,7 +13,7 @@
         {
             "lookup": "properties.vic_lga__3",
             "from": {
-                "data": {"url": "https://raw.githubusercontent.com/githubuser0099/Assignment2.1/main/LGA_Death_Rates_Simple.csv"},
+                "data": {"url": "https://raw.githubusercontent.com/githubuser0099/Assignment2/main/Data/LGA_Death_Rates_Simple.csv"},
                 "key": "LGA",
                 "fields": ["rate", "population", "deaths"]
                     }
