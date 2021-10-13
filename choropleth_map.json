@@ -8,7 +8,7 @@
     "title": {"text": "Death Rates in LGA's", "color": "white", "fontSize": 25},
     "projection": {"type": "equirectangular"},
     "data": {"url":"https://raw.githubusercontent.com/githubuser0099/Assignment2/main/Data/Melbourne_LGAs.topojson",
-                "format": {"type": "topojson", "feature": "Melbourne_LGAs"}},
+                "format": {"type": "topojson", "feature": "Victoria_LGAs"}},
     "transform": [
         {
             "lookup": "properties.vic_lga__3",
