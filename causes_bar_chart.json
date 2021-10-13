@@ -1,0 +1,29 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": "container",
+    "height": 800,
+    "background": "#2a383e",
+    "config": {"style": {"cell": {"stroke": "transparent"}}},
+    "view": {"fill": "#2a383e"},
+    "title": {"text": "Biggest Killers", "color": "white", "fontSize": 25},
+    "data": {"url": "https://raw.githubusercontent.com/githubuser0099/Assignment2.1/main/Cause_Of_Death_v2.csv"},
+    "transform": [
+        {"calculate":"parseInt(datum.Toll)", "as": "Toll"}
+      ],
+    "mark": "bar",
+    "encoding": {
+        "x": {"field": "Toll", "type": "quantitative", "title": "", "axis": {"labelFontSize": 16, "labelColor": "#634949", "gridOpacity": 0, "labelLimit": 1000}},
+        "y": {"field": "Cause Of Death", "type": "nominal", "title": "", "sort": "-x", "axis": {"labelFontSize": 14, "labelColor": "#ed7164", "labelPadding": 10, "labelLimit": 1000}},
+        "color": {
+            "field": "Toll", 
+            "type": "quantitative", 
+            "scale": {"scheme": "reds"},
+            "sort": "-x",
+            "legend": null
+        },
+        "tooltip": [
+            {"field": "Cause Of Death", "type":"nominal", "title": "Killer"},
+            {"field": "Toll", "type":"quantitative", "title": "Toll"}
+        ]
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": "container",
+    "height": 600,
+    "background": "#2a383e",
+    "view": {"fill": "#2a383e"},
+    "config": {"style": {"cell": {"stroke": "transparent"}}},
+    "title": {"text": "Death Rates Amongst Age Groups", "color": "white", "fontSize": 25},
+    "data": {"url": "https://raw.githubusercontent.com/githubuser0099/Repo55/main/AgeBracket.csv"},
+    "transform": [
+        {"calculate":"parseInt(datum.Death_Rate)", "as": "Death_Rate"}
+      ],
+    "mark": "bar",
+    "encoding": {
+        "x": {"field": "Death_Rate", "type": "quantitative", "title": "", "axis": {"labelFontSize": 16, "labelColor": "#634949", "gridOpacity": 0}},
+        "y": {"field": "Age", "type": "nominal", "title": "", "sort": "-x", "axis": {"labelFontSize": 16, "labelColor": "#ed7164"}},
+        "color": {
+            "field": "Death_Rate", 
+            "type": "quantitative", 
+            "scale": {"scheme": "reds"},
+            "legend": null
+        },
+        "tooltip": [
+            {"field": "Age", "type":"nominal", "title": "Age Bracket"},
+            {"field": "Death_Rate", "type":"quantitative", "title": "Death Rate"}
+        ]
+    }
+}

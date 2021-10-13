@@ -1,0 +1,72 @@
+/* This center aligns the heading, colours, and changes font size*/ 
+h1 {
+    text-align: center;
+    color: #ed7164;
+    font-size: 50px;
+}
+
+/* Determines webpage background colour */
+body {
+    background-color:#2a383e;
+}
+
+/* Ensures the 3 idioms take up only the necessary amount of space */
+#choropleth_map {
+    width: 100vw
+}
+#barchart_killers {
+    width: 50vw;
+}
+#barchart_agebrackets {
+    width: 50vw;
+}
+
+/*This creates white space between the first and second row.*/ 
+.pure-u-1 {
+    margin-top: 120px;
+    height: 30vw; 
+}
+
+/*This creates white space between the second and third row.*/ 
+.pure-u-1-2 {
+    margin-top: 250px;
+    height: 30vw;
+}
+
+/*This creates white space between the third and fourth row.*/ 
+#barchart_agebrackets {
+    margin-top: 200px;
+    height: 30vw;
+}
+#text_div2 {
+    margin-top: 290px;
+    height: 30vw;
+}
+
+
+/* This puts in a left and right margin for the first and second text blocks */
+#text_div {
+    margin-left: 50px;
+    margin-right: 100px;
+}
+#text_div2 {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#barchart_agebrackets {
+    margin-left: 25px;
+}
+
+/*Subheading Text Customisation */
+h2 {
+    font-size: 40px;
+    color: #ed7164
+}
+
+/* Paragraph Text Customisation */
+p {
+    font-size: 24px;
+    color: #484f52;
+}
+

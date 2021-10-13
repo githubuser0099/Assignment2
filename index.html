@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+    
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css" />
+    <link rel="stylesheet" href="layout.css">
+
+    <script src="vega_lite_vis.js"></script>
+
+    <title>Victorian Deaths</title>
+</head>
+
+<body>
+    <h1>Victorian Deaths In 2020</h1>
+    <div class="pure-g">
+        <div class="pure-u-1">
+            <div id="choropleth_map"></div>
+        </div>
+        <div class="pure-u-1-2">
+            <div id="text_div">
+                <h2>
+                    LGA's & Killers
+                </h2>
+                <p>
+                    As can be seen in the map above, Eastern Melbourne LGA’s currently have the lowest death rates, with Stonnington having a standard death rate of only 4.3 (all death rates are per 1,000 population, with the populations based off 2001, NOT 2020, as stated by the ABS). North Western LGAS have the highest rates, on the other hand, with Melton and Maribyrnong at 6.2. Unfortunately, these LGA’s have also been hit hardest by COVID-19.
+
+                    <br><br>Although, despite COVID being such a global tragedy,  COVID deaths were quite low in Melbourne, at 800 in 2020, relative to many other places in the world, such as New-York, which recorded a tragic 38,030 deaths, by December 31st, 2020.  The hard work of Victorians through lengthy, and severe lockdowns, has definitely paid off there. Unfortunately, heart diseases and cancers still continue to be the biggest killers of Victorians, with Iscahemic diseases alone killing 4,174 Victorians, that’s 5 Victorians for every COVID death. The net number of Victorian deaths to the cancers shown on the right, comes to a staggering 10,342, that’s almost 13 Victorians lost for every COVID death. 
+
+                    <br><br>Thankfully, due to a huge rally around vaccinations, COVID deaths in 2021 have so far been MUCH LOWER, and hopefully become a thing of the past. Heart diseases and cancers however, have proven to be much more difficult to eradicate.
+
+                </p>
+            </div>
+        </div>
+        <div class="pure-u-1-2">
+            <div id="barchart_killers"></div>
+        </div>
+        <div class="pure-u-1-2">
+            <div id="barchart_agebrackets"></div>
+        </div>
+        <div class="pure-u-1-2">
+            <div id="text_div2">
+                <h2>
+                    Age Groups
+                </h2>
+                <p>
+                    These particular killers (cancers and heart diseases), primarly affect the oldest age brackets, as can be seen on the left. The oldest age bracket, 100+, has a death rate of 284, 473 times higher than the youngest age bracket, which sits at 0.6. This is to be expected for the oldest age bracket, given that Australias life expectancy at 2020 is 83.2 years.
+
+                    <br><br>However the incredibly low death rate of 0.6, in 2020, for Victorian infants aged 0 to 4,  is certainly an astounding achievement relative to other parts of the world. That’s 78 times lower than 2019 global median amongst countries, which sits at an unfortunate 38. Fortunately, it seems that  COVID had no impact on the death rate for infants in Victoria, as from 2010 to 2019, the death rate stayed between 0.8 and 0.6.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
